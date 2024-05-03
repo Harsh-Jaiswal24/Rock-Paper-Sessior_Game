@@ -171,10 +171,11 @@ p{
 }
 
 #autochoice{
-    
+    color: red;
     background-color: gold;
 }
 .message{
+    text-align: center;
     background-color: tomato;
     color: black;
     font-size: 2rem;
