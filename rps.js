@@ -24,7 +24,7 @@ choices.forEach((choice)=>{
 });
 
 const compchoice=()=>{
-    const options=["stone","paper","sessior"];
+    const options=["stone","paper","scissor"];
     const randomid= Math.floor(Math.random()*3);
     return options[randomid];
 }
@@ -81,12 +81,12 @@ const playgame= (selected)=>{
         draw();
     }else{
         let userwin=true;
-        if(selected==="rock"){
+        if(selected==="stone"){
             userwin= computerchoice==="paper"?false:true;
         }else  if(selected==="paper"){
-            userwin= computerchoice==="sessior"?false:true;
+            userwin= computerchoice==="scissor"?false:true;
         }else{
-            userwin= computerchoice==="rock"?false:true;
+            userwin= computerchoice==="stone"?false:true;
         }
         showwinner(userwin,selected,computerchoice);
     
